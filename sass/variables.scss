@@ -1,0 +1,19 @@
+$NAV-BAR-BACKGROUND-COLOR: #131313;
+$LOGO-COLOR: #ff8177;
+$BUTTON-BACKGROUNG: #833ab4;
+%FLEX-CENTER {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin media($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+@mixin Xsign($hight, $degre) {
+  transform: translateY($hight) rotate($degre);
+}
+@mixin gradient($val1, $val) {
+  background-image: linear-gradient(to right, $val1 0%, $val 100%);
+}
